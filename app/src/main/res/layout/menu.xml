@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_marginTop="50dp"
+        android:textColor="#EF5350"
+        android:textStyle="bold"
+        android:text="Menu"
+        android:textSize="50dp" />
+    <Button
+        android:id="@+id/schedule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:textColor="#FAFAFA"
+        android:text="Schedule"
+        android:background="@drawable/button"
+        android:textSize="30dp"
+        android:layout_gravity="center_horizontal"/>
+    <Button
+        android:id="@+id/add_events"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:textColor="#FAFAFA"
+        android:text="Add Events"
+        android:background="@drawable/button"
+        android:textSize="30dp"
+        android:layout_gravity="center_horizontal"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <Button
+        android:id="@+id/quit"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/logout" />
+    </RelativeLayout>
+</LinearLayout>

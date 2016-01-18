@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp"
+        android:layout_marginTop="30dp"
+        android:textColor="#EF5350"
+        android:textStyle="bold"
+        android:text="New Events"
+        android:textSize="40dp" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp"
+        android:layout_marginTop="30dp"
+        android:textColor="#EF5350"
+        android:text="University Events"
+        android:textSize="30dp" />
+
+       <Spinner
+           android:id="@+id/spinner_1"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:paddingLeft="60dp"
+           android:layout_marginRight="60dp"
+           android:drawSelectorOnTop="false">
+       </Spinner>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <Button
+        android:id="@+id/add"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:text="add"
+        android:textColor="#FAFAFA"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/add"
+        android:layout_marginRight="20dp"/>
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent">
+        <Button
+            android:id="@+id/add_personal_events"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:layout_gravity="center"
+            android:text="Add Personal Events"
+            android:textColor="#FAFAFA"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="69dp" />
+        </RelativeLayout>
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/back"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/back" />
+        <Button
+            android:id="@+id/quit"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="@drawable/logout"/>
+    </RelativeLayout>
+</LinearLayout>

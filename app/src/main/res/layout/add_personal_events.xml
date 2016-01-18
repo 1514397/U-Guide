@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <!-- 定义HorizontalScrollView，为里面的组件添加水平滚动条 -->
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:textColor="#EF5350"
+        android:textStyle="bold"
+        android:text="Personal Events"
+        android:textSize="40dp" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:textColor="#EF5350"
+        android:text="Description"
+        android:textSize="25dp" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint=" Description"
+        android:ems="10"
+        android:id="@+id/name"
+        android:layout_gravity="center_horizontal" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#EF5350"
+        android:text="Date"
+        android:textSize="25dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:hint=" Date"
+        android:ems="10"
+        android:focusable="false"
+        android:id="@+id/editText"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#EF5350"
+        android:text="Time"
+        android:textSize="25dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="time"
+        android:hint=" Time"
+        android:ems="10"
+        android:id="@+id/editText2"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#EF5350"
+        android:text="Location"
+        android:textSize="25dp" />
+    <Spinner
+        android:id="@+id/spinner_2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:layout_marginRight="120dp"
+        android:drawSelectorOnTop="false">
+    </Spinner>
+    <Button
+        android:id="@+id/add"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:background="@drawable/add"
+        android:text="add"
+        android:textColor="#FAFAFA"
+        android:layout_marginLeft="250dp"
+        android:layout_marginRight="30dp"/>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/back"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/back" />
+    <Button
+        android:id="@+id/quit"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:background="@drawable/logout"/>
+</RelativeLayout>
+</LinearLayout>
+    </HorizontalScrollView>
+</ScrollView>
